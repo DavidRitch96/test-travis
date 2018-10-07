@@ -4,7 +4,3 @@ android:
     - android-27
     - build-tools-27.0.3
 
-script:
- - #TODO: get infer archive and extract it
- - #TODO: add infer executable to the path
- infer run -- ./gradle build

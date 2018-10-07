@@ -6,7 +6,7 @@ android:
 
 
 script:
- git clone https://github.com/facebook/infer.git
- cd infer/
- export PATH=`pwd`/infer/bin:$PATH
- cd ../
+ - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then cd $TRAVIS_BUILD_DIR ; fi
+  - which infer
+  - infer --version
+  - ./gradlew build --stacktrace

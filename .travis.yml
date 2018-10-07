@@ -7,5 +7,5 @@ android:
 
 script:
  git clone https://github.com/facebook/infer.git
- #INFER_PATH="./infer"
+ INFER_PATH="./infer"
 # INFER_PATH run -- ./gradlew build

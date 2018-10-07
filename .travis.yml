@@ -6,7 +6,6 @@ android:
 
 
 script:
- - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then cd $TRAVIS_BUILD_DIR ; fi
-  - which infer
-  - infer --version
-  - ./gradlew build --stacktrace
+ - #TODO: get infer archive and extract it
+ - #TODO: add infer executable to the path
+ infer -- /.gradle build

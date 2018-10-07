@@ -93,6 +93,13 @@ public class UI extends AppCompatActivity implements NavigationView.OnNavigation
 
 	private void newgame() {
 		game = new GameView(UI.this);
+		
+
+	    	String s = null;
+   		System.out.println(s.length());
+
+		
+		
 //		setContentView(game);
 		setContentView( R.layout.activity_main);
 		FrameLayout container = (FrameLayout) findViewById(R.id.container);

@@ -6,6 +6,6 @@ android:
 
 
 script:
- git clone https://github.com/facebook/infer.git
- INFER_PATH="./infer
- infer run -- ./gradlew build
+ git clone https://github.com/facebook/infer.git ${TRAVIS_BUILD_DIR}/infer
+ #INFER_PATH="./infer"
+ #infer run -- ./gradlew build

@@ -8,4 +8,4 @@ android:
 script:
  git clone https://github.com/facebook/infer.git
  INFER_PATH="./infer"
- export PATH=`pwd`/infer/bin:$PATH
+ export PATH=INFER_PATH/bin:$PATH

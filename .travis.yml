@@ -6,6 +6,7 @@ android:
 
 
 script:
- git clone ${"https://github.com/facebook/infer.git"}
+ NFER_GIT_PATH="https://github.com/facebook/infer.git"
+ git clone ${INFER_GIT_PATH}
  INFER_PATH="./infer/infer/bin/infer"
  INFER_PATH run -- ./gradlew build

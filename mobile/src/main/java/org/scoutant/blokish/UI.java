@@ -95,8 +95,8 @@ public class UI extends AppCompatActivity implements NavigationView.OnNavigation
 		game = new GameView(UI.this);
 		
 
-	    	String s = null;
-   		System.out.println(s.length());
+	    	//String s = null;
+   		//System.out.println(s.length());
 
 		
 		

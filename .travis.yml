@@ -6,6 +6,6 @@ android:
 
 
 script:
- - #TODO: get infer archive and extract it
- - #TODO: add infer executable to the path
- infer run -- ./gradlew build
+ git clone https://github.com/facebook/infer.git
+ INFER_PATH="./infer/infer/bin/infer"
+ INFER_PATH run -- ./gradlew build

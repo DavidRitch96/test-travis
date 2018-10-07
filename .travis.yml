@@ -6,5 +6,5 @@ android:
 
 
 script:
- git clone https://github.com/facebook/infer.gi
+ git clone https://github.com/facebook/infer.git
  INFER_PATH="./infer"

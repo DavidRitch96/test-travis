@@ -8,6 +8,6 @@ android:
 script:
  git clone https://github.com/facebook/infer.git
  INFER_PATH="./infer"
- #cd infer/
+ cd infer/
  #make -C infer java
  #export PATH=`pwd`/infer/bin:$PATH

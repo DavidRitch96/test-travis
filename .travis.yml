@@ -8,4 +8,4 @@ android:
 script:
  - #TODO: get infer archive and extract it
  - #TODO: add infer executable to the path
- infer -- /.gradle build
+ infer run -- ./gradlew build

@@ -8,4 +8,4 @@ android:
 script:
  - git clone https://github.com/facebook/infer.git
  - INFER_PATH="./infer"
- - infer run -- gradle build
+ - ./infer run -- gradle build

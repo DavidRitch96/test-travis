@@ -6,7 +6,10 @@ android:
 
 
 script:
- - git clone https://github.com/facebook/infer.git
- - INFER_PATH="./infer"
- - ./infer/infer/bin run -- gradle build
-
+ # - git clone https://github.com/facebook/infer.git
+ # - INFER_PATH="./infer"
+ - VERSION=0.15.0;
+   curl -sSL "https://github.com/facebook/infer/releases/download/v$VERSION/infer-linux64-v$VERSION.tar.xz"
+   | sudo tar -C /opt -xJ &&
+   sudo ln -s "/opt/infer-linux64-v$VERSION/bin/infer" /usr/local/bin/infer
+ - infer run -- gradle build
